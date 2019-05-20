@@ -1,0 +1,16 @@
+/*테이블 사이즈 줄이기*/
+table{
+    max-width: 1000px;
+    padding-left: 100px;
+}
+
+.div{
+    font-size: 100px;
+    border: red 1px solid;
+}
+
+/*
+1.테이블 가운데 정렬하고 최대 사이즈 고정
+2.글쓰기 링크 테이블 오른쪽 정렬하기
+
+*/
