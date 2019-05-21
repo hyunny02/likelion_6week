@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WRITE</title>
+    <link href="https://fonts.googleapis.com/css?family=Maiden+Orange|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style type="text/css">
+        form{
+            width: 100px;
+        }
+
+    </style>
+
+
+</head>
+
+    <body>
+    <br><br><br><br>
+    <center>
+         <form action="" method="post">
+             {% csrf_token %}
+             {{ form.as_p }}
+             <input type="submit" value="글쓰기">
+
+         </form>
+        </center>
+
+    </body>
+</html>
