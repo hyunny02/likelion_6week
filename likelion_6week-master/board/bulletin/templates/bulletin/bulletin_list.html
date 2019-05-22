@@ -31,7 +31,6 @@
             <center>
             <table class="table table-striped" style="width:1000px">
                  <thead>
-                    <th>#</th>
                     <th>제목</th>
                     <th>내용</th>
                     <tH>시간</tH>
@@ -40,8 +39,7 @@
                  {% for list in object_list %}
 
                  <tr>
-                    <td>{{ list.id }}</td>
-                    <td>{{ list.title }}</td>
+                    <td>{{ list.title}}</td>
                     <td>
                         {{ list.summary }}
                         <a href="{% url 'bulletin:detail' pk=list.id %}">...more</a>
