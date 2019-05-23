@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DELETE</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Maiden+Orange|Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+    <br><br><br><br>
+    <center>
+        <form action="" method="post">
+            {% csrf_token %}
+            <h4> 정말 삭제하시겠습니까?</h4>
+            <br>
+            <input type="submit" value="삭제"  class="btn btn-warning" >
+        </form></center>
+
+
+
+    </body>
+</html>

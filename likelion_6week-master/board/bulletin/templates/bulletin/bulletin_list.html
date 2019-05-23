@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>BOARD</title>
+        <link rel="stylesheet" href="./css/list_css.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Maiden+Orange|Noto+Sans+KR&display=swap" rel="stylesheet">
+
+        <style type="text/css"> .box {
+            margin-left: 80%;
+            margin-right: 15%;
+            text-align: right;
+        }
+        </style>
+
+    </head>
+    <body>
+        <br><br><br>
+
+            <center><h1>LIKELION BOARD, 7th</h1></center>
+        <br><br>
+        <div>
+            <div class="box">
+                <h4><a href="{% url 'bulletin:add' %}">글쓰기</a><h4></div>
+            <br>
+
+            <center>
+            <table class="table table-striped" style="width:1000px">
+                 <thead>
+                    <th>제목</th>
+                    <th>내용</th>
+                    <tH>시간</tH>
+                 </thead>
+
+                 {% for list in object_list %}
+
+                 <tr>
+                    <td>{{ list.title}}</td>
+                    <td>
+                        {{ list.summary }}
+                        <a href="{% url 'bulletin:detail' pk=list.id %}">...more</a>
+                    </td>
+                    <td>
+
+                        {{ list.created_at }}
+                    </td>
+                 </tr>
+
+
+                 {% endfor %}
+            </table>
+            </center>
+        </div>
+    </body>
+</html>
+

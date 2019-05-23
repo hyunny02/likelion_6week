@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MODIFY</title>
+
+     <style type="text/css">
+        form{
+        width: 100px;
+    }
+              </style>
+        <link href="https://fonts.googleapis.com/css?family=Maiden+Orange|Noto+Sans+KR&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <br><br><br><br>
+    <center>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="수정하기" class="btn btn-warning">
+        </form>
+    </center>
+
+    </body>
+</html>
